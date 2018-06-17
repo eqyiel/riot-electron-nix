@@ -7413,13 +7413,13 @@ let
         sha1 = "efdaa98ea7451324d092b2b2163a6a1d7a9a2147";
       };
     };
-    "resolve-1.8.0" = {
+    "resolve-1.8.1" = {
       name = "resolve";
       packageName = "resolve";
-      version = "1.8.0";
+      version = "1.8.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/resolve/-/resolve-1.8.0.tgz";
-        sha512 = "3ix0a2wq8xdmkbqf4rsf5byhs6in5qagab4f5mb57sch0yzfbh37xxyh8fvg7lm02f432yszyyxdq3664bwlhrh2im25xnarwkk1mrh";
+        url = "https://registry.npmjs.org/resolve/-/resolve-1.8.1.tgz";
+        sha512 = "1h4w4h955vs1426yq9wpw2cs8iy81860h3jbzg2ksqbshz3gd6khp4xf49nvva2zffdm70513jkfmk60acgb6ghqi4yshmv02n0y9q2";
       };
     };
     "resolve-from-1.0.1" = {
@@ -9328,7 +9328,7 @@ in
       description = "A feature-rich client for Matrix.org";
     };
     production = false;
-    bypassCache = false;
+    bypassCache = true;
   };
   "riot-web-file:../riot-web" = nodeEnv.buildNodePackage {
     name = "riot-web";
@@ -10398,7 +10398,7 @@ in
       sources."requirejs-2.1.22"
       sources."requires-port-1.0.0"
       sources."reselect-3.0.1"
-      sources."resolve-1.8.0"
+      sources."resolve-1.8.1"
       sources."resolve-from-1.0.1"
       sources."restore-cursor-1.0.1"
       sources."right-align-0.1.3"
@@ -10645,6 +10645,6 @@ in
       license = "Apache-2.0";
     };
     production = false;
-    bypassCache = false;
+    bypassCache = true;
   };
 }
